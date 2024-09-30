@@ -1,0 +1,456 @@
+:root {
+    --blue: #00ADB5;
+    --bg: #222831;
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+    min-height: 90rem;
+}
+
+body {
+    font-size: 3rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Menonaktifkan scroll ketika halaman dimuat */
+body.locked {
+    overflow: hidden;
+}
+
+/* Tombol yang terkunci (disable) */
+#unlockButton[disabled] {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+
+.undangan::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('download.png'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+.undangan {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.undangan h1, .undangan h4, .undangan p {
+    box-shadow: var(--shadow);
+    animation: apa 3s ease;
+    transition: opacity 1s ease-in;
+}
+
+.undangan h1 {
+    font-size: 2rem;
+    animation: fracture  1.7s ease-in; 
+}
+
+.undangan h4 {
+    font-size: 6rem;
+    font-family: "Dancing Script", cursive;
+    animation: fracture  1.7s ease-in; 
+}
+
+.undangan p {
+    font-size: 3.5rem;
+    animation: fracture  1.7s ease-in; 
+}
+
+.undangan a {
+    position: relative; 
+    margin-top: 10px;
+    z-index: 2; 
+    color: black;
+    background-color: #9DDED2;
+    transition:  0.3s ease, color 0.3s ease; 
+    box-shadow: var(--shadow);
+    animation: fracture  1.7s ease-in; 
+}
+
+.undangan a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.mynavbar {
+ background-color: rgba(225, 225, 225, 0.5) !important;
+}
+
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.home {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-image: url(A11.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: -6rem;
+   padding-top: 15rem;
+   padding-bottom: 5rem;
+}
+
+
+.home h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.home h3 {
+    color: var(--blue);
+    font-family: "Dancing Script";
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.home p {
+    color: var(--bg);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.home .couple {
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.home .couple h2 {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+}
+
+.col-md-8 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.d-flex {
+    gap: 10px;
+}
+
+.info{
+    background-color: var(--bg);
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.info a {
+    font-size: 2rem;
+}
+
+.info h3 {
+    background-color: var(--bg);
+    font-family: "dancing script";
+    color: var(--blue);
+    font-size: 4rem;
+}
+
+.gallery {
+    background-color: white;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    gap: 20;
+}
+
+
+.gallery p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.gallery span{
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.gallery h3 {
+    color: var(--blue);
+    font-family: "Dancing Script";
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.simply-countdown{
+    overflow:hidden;
+    display:table;
+    margin: auto;
+    animation: fracture  1.7s ease-in; 
+    }
+
+.RSVP {
+    background-color: var(--bg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 20;
+}
+
+.RSVP h3 {
+    color: var(--blue);
+    font-family: "Dancing Script";
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.RSVP p {
+    color: #EEEEEE;
+}
+
+.RSVP form label {
+    color: #EEEEEE;
+    font-size: 1.5rem;
+}
+
+.RSVP button {
+    background-color: #E3FDFD;
+    color: #112D4E;
+    border: 1px solid var(--blue);
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.RSVP button:hover {
+    background-color: var(--blue);
+    color: #EEEEEE;
+    border: 1px solid white;
+}
+
+#RSVP .form-control, 
+#RSVP .form-select {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+#RSVP .form-label {
+    font-weight: bold;
+}
+
+#RSVP button {
+    margin-top: 20px;
+}
+
+.list-group {
+    font-size: 1.8rem;
+}
+
+.Hadiah {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    gap: 20;
+    background-color: #F9F7F7;
+}
+
+.Hadiah span {
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.Hadiah p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.Hadiah h3 {
+    font-family: "Dancing Script";
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+    color: var(--blue);
+}
+
+.list-group-item {
+    background-color: #495E57;
+    color: white;
+}
+
+.list-group-item p {
+    font-size: 2rem;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+.penutup{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    gap: 20;
+    background-color: var(--bg);
+    color: white;
+}
+
+.penutup h3 {
+    font-family: "Dancing Script";
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+    color: var(--blue);
+}
+
+.audio-icon-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotesi 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+footer {
+    background-color: pink; 
+    padding: 1rem;
+    text-align: center; 
+}
+
+footer .block {
+    display: block;
+    margin-bottom: 10px; 
+    color: #333; 
+    font-size: 1rem; 
+}
+
+footer a {
+    color: #393E46; 
+    text-decoration: none; 
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: white;
+}
+
+footer li {
+    margin: 0.5rem;
+    list-style: none;
+    display: inline;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .mynavbar .nav-link {
+        font-size: 15px; 
+    }
+}
+
+/* Media query */
+/* desktop */
+@media only screen and (max-width: 1024px) {
+   html {
+    font-size: 70%;
+   }
+}
+/* table */
+@media only screen and (max-width: 768px)   {
+    html {
+        font-size: 65%;
+    }
+}
+
+.simply-countdown > .simply-section {
+    padding: 60x;
+    margin: 5px;
+}
+
+.mynavbar .nav-link {
+    font-size: 1.5rem; 
+    text-align: center;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+.simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 4px;
+}
+
+@keyframes fracture {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0);
+    }
+}
+
+@keyframes area {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+
+@keyframes rotesi {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
