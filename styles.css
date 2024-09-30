@@ -10,12 +10,20 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* Menonaktifkan scroll ketika halaman dimuat */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.offcanvas {
+    width: 100%;
+    max-width: 100%;
+}
+
 body.locked {
     overflow: hidden;
 }
 
-/* Tombol yang terkunci (disable) */
 #unlockButton[disabled] {
     pointer-events: none;
     opacity: 0.6;
@@ -41,6 +49,16 @@ body.locked {
     position: relative;
     min-height: 100vh;
     background-color: var(--bg);
+    .undangan {
+    width: 100%;
+    padding: 0 15px; 
+    box-sizing: border-box;
+}
+    
+    h1, h4, p {
+    font-size: 1rem; 
+}
+
 }
 
 .undangan h1, .undangan h4, .undangan p {
