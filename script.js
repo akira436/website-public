@@ -12,28 +12,28 @@ simplyCountdown('.simply-countdown', {
       seconds: { singular: 'detik', plural: 'detik' }
     },
   });
- // Pada saat halaman pertama kali dimuat, tombol dikunci dan scroll dinonaktifkan
+ 
 window.onload = function() {
-  document.body.classList.add('locked'); // Menonaktifkan scroll
-  document.getElementById('unlockButton').setAttribute('disabled', true); // Kunci tombol
+  document.body.classList.add('locked'); 
+  document.getElementById('unlockButton').setAttribute('disabled', true); 
 };
 
-// Fungsi untuk membuka kunci tombol, memainkan audio, dan scroll ke #info
+
 function unlockPage() {
-  // Aktifkan scroll
+  
   document.body.classList.remove('locked');
   
-  // Aktifkan tombol
+ 
   document.getElementById('unlockButton').removeAttribute('disabled');
   
-  // Mainkan lagu
+  
   const audio = document.getElementById('song');
   audio.muted = false;
   audio.play().catch(error => {
       console.error("Playback failed: ", error);
   });
 
-  // Scroll ke bagian info
+ 
   const targetElement = document.querySelector('#info');
   targetElement.scrollIntoView({ behavior: 'smooth' });
 }
