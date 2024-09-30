@@ -20,9 +20,11 @@ html, body {
     max-width: 100%;
 }
 
+
 body.locked {
     overflow: hidden;
 }
+
 
 #unlockButton[disabled] {
     pointer-events: none;
@@ -49,16 +51,9 @@ body.locked {
     position: relative;
     min-height: 100vh;
     background-color: var(--bg);
-    .undangan {
     width: 100%;
     padding: 0 15px; 
     box-sizing: border-box;
-}
-    
-    h1, h4, p {
-    font-size: 1rem; 
-}
-
 }
 
 .undangan h1, .undangan h4, .undangan p {
@@ -414,7 +409,7 @@ footer li {
 .simply-countdown > .simply-section {
     padding: 60x;
     margin: 5px;
-    padding: 42px;
+    padding: 35px;
     margin: 4px;
 }
 
@@ -430,6 +425,7 @@ footer li {
         font-size: 60%;
     }
 }
+
 
 @keyframes fracture {
     from {
