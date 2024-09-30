@@ -414,6 +414,8 @@ footer li {
 .simply-countdown > .simply-section {
     padding: 60x;
     margin: 5px;
+    padding: 42px;
+    margin: 4px;
 }
 
 .mynavbar .nav-link {
@@ -427,11 +429,6 @@ footer li {
     html {
         font-size: 60%;
     }
-}
-
-.simply-countdown > .simply-section {
-    padding: 45px;
-    margin: 4px;
 }
 
 @keyframes fracture {
